@@ -9,6 +9,7 @@ import { GLTFLoader } from "https://cdn.skypack.dev/three@0.129.0/examples/jsm/l
 const scene = new THREE.Scene();
 //create a new camera with positions and angles
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.3, 1000);
+const camera = new THREE.PerspectiveCamera(85, window.innerWidth / window.innerHeight, 1, 500);
 
 //Keep track of the mouse position, so we can make the eye move
 let mouseX = window.innerWidth / 2;
@@ -21,7 +22,7 @@ let object;
 let controls;
 
 //Set which object to render
-let objToRender = 'eye';
+let objToRender = 'dino';
 
 //Instantiate a loader for the .gltf file
 const loader = new GLTFLoader();
